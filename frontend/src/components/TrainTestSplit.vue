@@ -17,7 +17,7 @@ const ratio = ref(0.8)
 const emit = defineEmits(['splitted'])
 
 const split = async () => {
-  await axios.post("http://localhost:5000/split", { ratio: ratio.value })
+  await axios.post("https://no-code-ml-builder-e7q4.onrender.com/split", { ratio: ratio.value })
   alert("Split Done")
   emit("splitted") 
 }

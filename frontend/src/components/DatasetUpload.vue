@@ -53,7 +53,7 @@ const upload = async (e) => {
 
   try {
     const res = await axios.post(
-      "http://localhost:5000/upload",
+      "https://no-code-ml-builder-e7q4.onrender.com/upload",
       form
     )
     info.value = res.data

@@ -53,7 +53,7 @@ const summary = ref(null)
 const emit = defineEmits(['preprocessed'])
 
 const apply = async (method) => {
-  const res = await axios.post("http://localhost:5000/preprocess", {
+  const res = await axios.post("https://no-code-ml-builder-e7q4.onrender.com/preprocess", {
     method,
     target: target.value
   })

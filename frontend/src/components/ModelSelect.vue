@@ -14,7 +14,7 @@ import axios from 'axios'
 const emit = defineEmits(['trained'])
 
 const train = async (model) => {
-  const res = await axios.post("http://localhost:5000/train", { model })
+  const res = await axios.post("https://no-code-ml-builder-e7q4.onrender.com/train", { model })
   emit("trained", res.data)
 }
 </script>
